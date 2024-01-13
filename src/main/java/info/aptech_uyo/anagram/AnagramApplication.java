@@ -14,7 +14,7 @@ public class AnagramApplication {
 	}
 
 	@GetMapping("/detect")
-	public String hello(
+	public String detect(
 		@RequestParam(value = "word", defaultValue = "foefet") String word,
 		@RequestParam(value = "testWord", defaultValue = "toffee") String testWord) {
 		return word + " is" + (word == testWord ? "" : " not") + " an anagram of " + testWord;

@@ -3,7 +3,7 @@ An **anagram** is the result of rearranging the letters of a word to produce a n
 
 **Note:** Anagrams are case insensitive
 
-Fix the endpoint to return the correct message using "is an anagram of" if the two arguments given are anagrams of each other; return using "is not an anagram of" otherwise.
+Fix the `/detect` endpoint to respond with the correct message, using "is an anagram of" if the two arguments given are anagrams of each other; return using "is not an anagram of" otherwise.
 
 ### Examples
 `"foefet"` is an anagram of `"toffee"`
@@ -11,5 +11,6 @@ Fix the endpoint to return the correct message using "is an anagram of" if the t
 `"Buckethead"` is an anagram of `"DeathCubeK"`
 
 ### Instructions
-- You are encouraged to try writing tests. Your solution will be run against many tests after this assessment.
+- Test your solution by running `./mvnw test`
+- You are encouraged to try writing more tests. Your solution will be run against many more tests after this assessment.
 - Push your changes to the `main` branch: `git push origin main`

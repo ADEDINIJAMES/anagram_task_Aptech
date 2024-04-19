@@ -20,8 +20,6 @@ private AnagramCheckClass anagramCheckClass;
 	public String detect(
 		@RequestParam(value = "word", defaultValue = "foefet") String word,
 		@RequestParam(value = "testWord", defaultValue = "toffee") String testWord) {
-
-
 		return word + " is" + (anagramCheckClass.checkAnagram(word,testWord) ? "" : " not") + " an anagram of " + testWord;
 	}
 

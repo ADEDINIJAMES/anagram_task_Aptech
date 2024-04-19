@@ -11,7 +11,6 @@ public class AnagramCheckClass {
     public Boolean checkAnagram (String word, String testWord){
         String wordLowercase= word.toLowerCase();
         String testWordLowerCase = testWord.toLowerCase();
-
 char[]wordA = wordLowercase.toCharArray();
 char[]testWordA = testWordLowerCase.toCharArray();
         Arrays.sort(wordA);

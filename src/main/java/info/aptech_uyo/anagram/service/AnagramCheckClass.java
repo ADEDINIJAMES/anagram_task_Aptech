@@ -9,9 +9,11 @@ import java.util.Objects;
 public class AnagramCheckClass {
 
     public Boolean checkAnagram (String word, String testWord){
+        String wordLowercase= word.toLowerCase();
+        String testWordLowerCase = testWord.toLowerCase();
 
-char[]wordA = word.toCharArray();
-char[]testWordA = testWord.toCharArray();
+char[]wordA = wordLowercase.toCharArray();
+char[]testWordA = testWordLowerCase.toCharArray();
         Arrays.sort(wordA);
         Arrays.sort(testWordA);
 
